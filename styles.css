@@ -1,0 +1,154 @@
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-section.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.bg-animated {
+    position: relative;
+    background: linear-gradient(120deg, #0d1b2a, #1b263b, #415a77, #778da9);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animasi ikon */
+.icon-wrapper img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-wrapper:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Tombol dan elemen hover */
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Typography */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Animasi gradient tombol */
+.btn-gradient {
+    background: linear-gradient(90deg, #1b263b, #415a77, #778da9);
+    background-size: 200% 200%;
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+
+.btn-gradient:hover {
+    background-position: right center;
+    transform: scale(1.05);
+}
+
+/* Efek asap */
+.smoke {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    animation: puff 1s forwards;
+}
+
+@keyframes puff {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Efek bintang jatuh */
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    animation: shooting 3s ease-in-out infinite;
+}
+
+@keyframes shooting {
+    0% {
+        opacity: 0;
+        transform: translateY(0) rotate(45deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(45deg);
+    }
+}
+
+/* Efek kunang-kunang */
+.firefly {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 204, 0.8);
+    border-radius: 50%;
+    animation: blink 3s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sidebar styling */
+#sidebar a {
+    margin: 10px 0;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#sidebar a:hover {
+    background-color: #1b263b;
+    color: #778da9;
+}
