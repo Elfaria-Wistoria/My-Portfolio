@@ -2,7 +2,6 @@
 
 Welcome to my personal portfolio website! This repository contains all the source code for my portfolio, where I showcase my skills, projects, and experience. Feel free to explore and connect with me.
 
-![Portfolio Screenshot](path-to-screenshot.png)
 
 ## 🚀 Features
 
@@ -15,7 +14,7 @@ Welcome to my personal portfolio website! This repository contains all the sourc
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Frameworks**: Bootstrap 5, jQuery
+- **Frameworks**: Tailwind
 - **Animations**: CSS Animations, AOS (Animate On Scroll)
 - **Deployment**: GitHub Pages
 
@@ -23,13 +22,8 @@ Welcome to my personal portfolio website! This repository contains all the sourc
 
 ```bash
 .
+├──logo                # Programming language logo
 ├── index.html         # Main landing page
-├── about.html         # About me page
-├── projects.html      # Projects showcase page
-├── contact.html       # Contact form page
-├── assets
-│   ├── css            # Custom styles
-│   ├── js             # Custom scripts
-│   ├── images         # Image assets
-│   └── fonts          # Custom fonts
+├── styles.css         # My csss
+├── scripts.js         # My javascript
 └── README.md          # This README file
